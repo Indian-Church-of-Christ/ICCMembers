@@ -25,6 +25,7 @@ class App extends Component {
           selectedDashboard={this.state.selectedDashboard}/>
         <Footer />
       </div>
+      
     );
   }
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import DashboardContainer from './DashboardContainer';
 import ChildContainer from './ChildContainer';
+import DoughnutChart from "./Charts/DoughnutChart";
 
 const mainContStyle = {
   backgroundColor: '#bbd5db',
@@ -112,9 +113,17 @@ class MainContainer extends Component {
               onChildGroupClick={this.onChildGroupClick} showMembers={showMembers} />
           </Col>
         </Row>
+        <Row>
+          <Col>
+            <DoughnutChart>
+            </DoughnutChart>
+          </Col>
+        </Row>
       </Container>
     );
+    
   }
+  
 }
 
 export default MainContainer;
